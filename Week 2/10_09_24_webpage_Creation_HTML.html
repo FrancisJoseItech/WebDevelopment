@@ -1,0 +1,95 @@
+<!-- 
+ HTML Assignment Task: Create an HTML webpage that exactly matches the design and layout of this
+  example: https://ajay-dev99.github.io/Assignment-2/ Requirements: Use the HTML tags we've covered in class,
+   including headings, paragraphs, images, lists, and layout tags. Ensure the webpage structure and content are identical to the example provided.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My HTML5 Webpage</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#services">Serices</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+            <section id="about">
+                <h2>About Us</h2>
+                <p>
+                    This is a brief introduction about our company. We specialize in providing quality services to our clients.
+                </p>
+                <img src="images\depositphoto.jpg"alt="About Us"
+            </section>
+            <section id="services">
+                <h2>Our Services</h2>
+                <article>
+                    <h3>Services 1</h3>
+                    <p>We offer exceptional service 1 to meet your needs.</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxWEdLJ53DcifdsRQ41QoPYSpGhF_SFsE0V2K7I3kU0hGSq1OauoGi_iSBAw&s"alt="Service 1"
+                </article>
+                <article>
+                    <h3>Service 2</h3>
+                    <p>Our service 2 is designed to provide great value.</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpdKNTn1LbwHJbAlCyH7cx-_8dzKvCatTYy4OqWKo303loC4bkJifbW1d0Sg&s"alt="Service 2"
+                </article>
+                <article>
+                    <h3>Service 3</h3>
+                    <p>Experience the best with our service 3.</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSREf7736EpY1ipTeDxCi3ooavzwLL4PX9HBvhBMcPwOPBWIRZSVYHoNuRQAg&s"alt="Service 3"
+                </article>
+            </section> 
+    </main>
+    <footer>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="/submit-form"method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"required>
+                <br>
+                <br>
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email"required>
+                <br>
+                <br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"required></textarea>
+                <br>
+                <br>
+                <label for="gender"> Gender:</label>
+                <br>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <br>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+                <br>
+                <input type="radio" id="other" name="gender" value="other" required>
+                <label for="other">Other</label>
+                <br>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>  
+</body>
+</html>
